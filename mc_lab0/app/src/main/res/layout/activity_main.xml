@@ -72,28 +72,32 @@
             android:text="Red" />
     </RadioGroup>
 
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:layout_width="252dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="51dp"
-        android:layout_marginEnd="255dp"
-        android:layout_marginBottom="349dp"
+    <Spinner
+        android:id="@+id/spLanguages"
+        android:layout_width="190dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="381dp"
+        android:entries="@array/languages"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.222">
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-        <AutoCompleteTextView
-            android:id="@+id/autoCompleteTextView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:inputType="none"
-            android:text="English" />
-    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/selectedLanguage"
+        android:layout_width="165dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="307dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="23dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spLanguages" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,13 +3,12 @@ package com.example.helloworld
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.RadioGroup
+import android.view.View
+import android.widget.*
 import androidx.constraintlayout.widget.ConstraintLayout
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
-   private var binding:
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -22,11 +21,10 @@ class MainActivity : AppCompatActivity() {
 
         // Buttons Listeners
         buttonred.setOnClickListener{
-            Toast.makeText(this, "Button Red Clicked", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this, "Button Red Clicked", Toast.LENGTH_SHORT).show()
             mlayout.setBackgroundColor(Color.RED)
         }
         buttonblue.setOnClickListener{
-            Toast.makeText(this, "Button Blue Clicked", Toast.LENGTH_SHORT).show()
             mlayout.setBackgroundColor(Color.BLUE)
         }
 
@@ -40,5 +38,37 @@ class MainActivity : AppCompatActivity() {
                 mlayout.setBackgroundColor(Color.RED)
             }
         }
+
+        val spinnerlanguages: Spinner = findViewById(R.id.spLanguages)
+        var selectedlang: TextView = findViewById(R.id.selectedLanguage)
+
+        // Object is an anonymous class
+        spinnerlanguages.onItemSelectedListener()
+
+
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
