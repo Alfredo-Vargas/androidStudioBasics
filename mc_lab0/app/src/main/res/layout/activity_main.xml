@@ -16,7 +16,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="128dp"
         android:layout_marginBottom="456dp"
-        android:text="Hello Alfredo!"
+        android:text="Hello Pacha!"
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -99,5 +99,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spLanguages" />
+
+    <TextView
+        android:id="@+id/textMutable"
+        android:layout_width="162dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="209dp"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spLanguages" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="232dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="54dp"
+        android:hint="Type Here ..."
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/selectedLanguage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMutable" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
