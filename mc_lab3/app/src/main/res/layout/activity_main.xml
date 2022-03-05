@@ -11,12 +11,11 @@
         android:layout_width="243dp"
         android:layout_height="57dp"
         android:layout_marginStart="75dp"
-        android:layout_marginTop="33dp"
+        android:layout_marginTop="68dp"
         android:layout_marginEnd="75dp"
-        android:layout_marginBottom="431dp"
-        android:hint="hint"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:hint="message to second"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_main" />
 
@@ -25,12 +24,36 @@
         android:layout_width="137dp"
         android:layout_height="59dp"
         android:layout_marginStart="137dp"
-        android:layout_marginTop="161dp"
         android:layout_marginEnd="137dp"
         android:layout_marginBottom="33dp"
-        android:text="next"
+        android:text="TO SECOND"
         app:layout_constraintBottom_toTopOf="@+id/input_main"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnThird"
+        android:layout_width="170dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="84dp"
+        android:text="TO THIRD"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_main" />
+
+    <TextView
+        android:id="@+id/textViewMain"
+        android:layout_width="187dp"
+        android:layout_height="57dp"
+        android:text="selected from third"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_main"
+        app:layout_constraintVertical_bias="0.571" />
 </androidx.constraintlayout.widget.ConstraintLayout>
