@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="456dp"
+        android:text="Hello Pacha!"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio_grp" />
+
+    <Button
+        android:id="@+id/btn_blue"
+        android:layout_width="119dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="60dp"
+        android:text="Blue"
+        app:layout_constraintEnd_toStartOf="@+id/btn_red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_red"
+        android:layout_width="118dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="61dp"
+        android:text="Red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_blue"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp"
+        android:layout_width="350dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_blue">
+
+        <RadioButton
+            android:id="@+id/radioBtnBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blue" />
+
+        <RadioButton
+            android:id="@+id/radioBtnRed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Red" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spLanguages"
+        android:layout_width="190dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="381dp"
+        android:entries="@array/languages"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/selectedLanguage"
+        android:layout_width="165dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="307dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="23dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spLanguages" />
+
+    <TextView
+        android:id="@+id/textMutable"
+        android:layout_width="162dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="209dp"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spLanguages" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="232dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="54dp"
+        android:hint="Type Here ..."
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/selectedLanguage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMutable" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
